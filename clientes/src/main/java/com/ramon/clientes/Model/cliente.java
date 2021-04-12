@@ -7,9 +7,11 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+import lombok.Data;
 import java.time.LocalDate;
 
 @Entity
+@Data
 public class cliente {
     
     @Id
@@ -24,4 +26,6 @@ public class cliente {
 
     @Column
     private LocalDate dataCadastro;
+
+
 }
