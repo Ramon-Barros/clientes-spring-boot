@@ -1,4 +1,4 @@
-package com.ramon.clientes.Model;
+package com.ramon.clientes.Model.enity;
 
 
 import javax.persistence.Column;
