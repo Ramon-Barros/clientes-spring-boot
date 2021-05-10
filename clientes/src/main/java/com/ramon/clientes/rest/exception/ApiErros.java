@@ -11,7 +11,7 @@ public class ApiErros {
     private List<String> errors;
 
     public ApiErros(List<String> errors){
-        this.errors =errors;
+        this.errors=errors;
     }
 
     public ApiErros(String message){

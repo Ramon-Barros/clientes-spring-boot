@@ -15,7 +15,7 @@ public class InternalizacaoConfig {
     public MessageSource messageSouce(){
         ReloadableResourceBundleMessageSource messageSouce = new ReloadableResourceBundleMessageSource();
         messageSouce.setBasename("classpath:messages");
-        messageSouce.setDefaultEncoding("ISO-8859-1");
+        messageSouce.setDefaultEncoding("UTF-8");
         messageSouce.setDefaultLocale(Locale.getDefault());
         return messageSouce;
     }
