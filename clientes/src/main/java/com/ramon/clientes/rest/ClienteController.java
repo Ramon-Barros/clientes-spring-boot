@@ -1,5 +1,7 @@
 package com.ramon.clientes.rest;
 
+import java.util.List;
+
 import javax.validation.Valid;
 
 import com.ramon.clientes.Model.enity.Cliente;
@@ -30,6 +32,11 @@ public class ClienteController {
     @Autowired
     public ClienteController(ClienteRepository repository){
         this.repository = repository;
+    }
+
+    @GetMapping
+    public List<Cliente> obterTodos(){
+        return repository.findAll();
     }
     
     @PostMapping
