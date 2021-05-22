@@ -55,7 +55,7 @@ public class ServicoPrestadoController {
         @RequestParam(value = "nome", required = false, defaultValue = "") String nome,
         @RequestParam(value = "mes", required = false ) Integer mes
     ){
-        return repository.findByNomeAndMes(nome, mes);
+        return repository.findByNomeClienteAndMes("%" + nome + "%", mes);
     }
     
 }

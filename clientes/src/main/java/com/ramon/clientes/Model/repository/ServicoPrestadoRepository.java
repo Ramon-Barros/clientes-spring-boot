@@ -11,6 +11,6 @@ import org.springframework.data.repository.query.Param;
 public interface ServicoPrestadoRepository extends JpaRepository<ServicoPrestado, Integer >{
 
     @Query(" select s from  ServicoPrestado s join s.cliente c where upper(c.nome) like upper(:nome) and MONTH(s.date) =:mes")
-    List<ServicoPrestado> findByNomeAndMes(@Param("nome") String nome, @Param("mes") Integer mes);
+    List<ServicoPrestado> findByNomeClienteAndMes(@Param("nome") String nome, @Param("mes") Integer mes);
     
 }
